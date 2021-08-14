@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tic tac toe</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <div id="overlay" onclick="hide()">
+    <div class="text">
+      <h2 style="text-align:center" >RULES FOR TIC-TAC-TOE</h2>
+      <p >1.The game is played on a grid that's 3 squares by 3 squares.</p>
+      <p>2.The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</p>
+      <p>3.When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</p>
+  </div>
+  </div>
+  <div id="container" onclick = "myToggle(this)" >
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <h3 style="text-align:center" >Next Turn: <span id="currentPlayer">PlayerX</span></h3>
+  <button type="button" value="reset" onclick="reset()">Reset</button>
+  <button type="button" value="help" onclick="unhide()">Help</button>
+  <div class="grid">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </div>
+
+
+  <script src="app.js" charset="utf-8"> </script>
+
+</body>
+</html>

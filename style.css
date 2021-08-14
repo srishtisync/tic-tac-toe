@@ -1,0 +1,93 @@
+.grid{
+  width:610px;
+  height:610px;
+  display:flex;
+  flex-wrap:wrap;
+  background-color:black;
+  justify-content: space-between;
+  margin:auto;
+  transform : scale(0.7,0.7);
+}
+
+.grid  div{
+  background-color:white;
+  margin-bottom:5px;
+  height:200px;
+  width:200px;
+
+
+
+}
+.playerX{
+  //background:rgba(255,100,100,0.5);
+  background-image:url('cross.png');
+
+  /*images are 200*200*/
+}
+
+.playerO{
+  background-image:url('circle.png');
+}
+
+#container{
+  display:inline-block;
+  cursor:pointer;
+}
+
+.bar1, .bar2, .bar3{
+  background-color:black;
+  width:35px;
+  height:5px;
+  margin:6px 0 ;
+  transition:0.4s;
+}
+
+
+.change .bar1{
+  transform : rotate(-45deg) translate(-9px,6px)
+
+}
+
+.change .bar2{
+  opacity:0;
+}
+
+.change .bar3{
+  transform : rotate(45deg) translate(-8px,-8px)
+
+}
+
+#overlay{
+  position:fixed;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:2;
+  cursor:pointer;
+  background-color:rgba(0,0,0,0.5);
+  display:none;
+
+}
+
+.text{
+  position:absolute;
+  top:20%;
+  font-size:30px;
+  color:pink;
+  left:20%;
+  //transform : translate(,20%, -20%);
+  text-align:justify;
+  right:20%;
+
+}
+button{
+  padding:10px;
+  border-radius:5px;
+  font-family:arial;
+  border:none;
+  margin-left:30%;
+  cursor:pointer;
+}
